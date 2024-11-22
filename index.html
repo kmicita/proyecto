@@ -2,12 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="CSS/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
     <title>Vite + React</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="l-header" id="header"> 
+      <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Carlos</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class='bx bxs-home-circle '></i> Home
+              </a>
+            </li> 
+             <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class='bx bxs-user nav__icon'></i> Perfil
+              </a>
+            </li>  <li class="nav__item">
+              <a href="#"educat ion class="nav__link">
+                <i class='bx bx-book nav__icon'></i>Estudios
+              </a>
+            </li>  
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class='bx bx-receipt nav__icon'></i>Aptitudes
+              </a>
+            </li> 
+             <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class='bx bx-briefcase nav__icon'></i>Experiencia
+              </a>
+            </li>  
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class='bx bx-award nav__icon'></i>Certificaciones
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class='bx bx-link-external nav__icon'></i>Referencias
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bx-grid-alt'></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <div class="resume">
+        <div class="resume__left">
+           <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="img/perfil.jpg" alt="" class="home__img">
+
+                <h1 class="home__title">Carlos <b> Gonzalez</b></h1>
+                <h3 class="home___profession">Desarrollador Web</h3>
+
+                <div>
+                   <a download=" " href="pdf/Hoja de Vida Administrador Sencillo Blanco y Negro (2).pdf">Descargar</a>
+                </div>
+              </div>
+
+              <div class="home__adress bd-grid">
+                <span class="home__information">
+                  <i class='bx bx-map home__icon' ></i> Ciudadela #123 Santa Marta - Colombia
+                </span>
+                <span class="home__information">
+                  <i class='bx bx-envelope-open home__icon'></i> k4rl0s.gonzalezgmail.com
+                </span>
+                <span class="home__information">
+                  <i class='bx bx-phone home__icon'></i> 3219305556
+                </span>
+              </div>
+            </div>
+           </section>
+
+        </div>
+
+        <div class="resume__right">
+
+        </div>
+      </div>
+     </main>
+
+    
+
+    
   </body>
 </html>
